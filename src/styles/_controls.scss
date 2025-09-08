@@ -3,11 +3,11 @@
 
 .controls {
   display: grid;
-  grid-template-columns: repeat(4, minmax(32px, 112px));
+  grid-template-columns: repeat(4, minmax(32px, 100px));
   align-content: center;
   justify-content: center;
   gap: 4px;
-
   height: 100%;
+
   padding: 24px;
 }

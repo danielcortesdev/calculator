@@ -16,6 +16,10 @@ body {
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-family: $primary-font;
   color: $font-color;
   background-color: $primary-color;
