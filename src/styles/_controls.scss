@@ -2,12 +2,12 @@
 @import "mixins";
 
 .controls {
-  @include grid(
-    $columns: repeat(4, minmax(32px, 124px)),
-    $rows: repeat(5, min-content),
-    $justify: center,
-    $align: center,
-    $gap: 4px
-  );
+  display: grid;
+  grid-template-columns: repeat(4, minmax(32px, 112px));
+  align-content: center;
+  justify-content: center;
+  gap: 4px;
+
+  height: 100%;
   padding: 24px;
 }

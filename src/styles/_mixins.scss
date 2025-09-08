@@ -84,12 +84,12 @@
 
 @mixin adjustCalcFontSize {
   .expression {
-    font-size: fs(2);
+    font-size: fs(1.5);
   }
 
   .constant,
   .evaluation {
-    font-size: fs(3);
+    font-size: fs(2.5);
   }
 
   .controls {
@@ -107,9 +107,5 @@
     .list {
       font-size: fs(1.5);
     }
-  }
-
-  .history-icon {
-    font-size: fs(2);
   }
 }
