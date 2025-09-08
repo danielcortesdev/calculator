@@ -61,7 +61,7 @@ function Controls({
   function handleButton({ target }) {
     try {
       const value = target.value;
-      navigator.vibrate(1);
+      if (navigator.vibrate) navigator.vibrate(1);
       isOperator(value) ? handleOperator(value) : handleConstant(value);
     } catch (error) {
       console.error(error);

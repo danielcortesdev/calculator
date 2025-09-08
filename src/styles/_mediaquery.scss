@@ -1,25 +1,8 @@
 @import "mixins";
 
-@media screen and (min-width: 600px) and (max-width: 835px) {
+@media screen and (min-width: 600px) {
   .calculator {
-    .screen {
-      border-radius: 16px;
-    }
-
-    @include adjustCalcFontSize;
-  }
-}
-
-@media screen and (min-width: 835px) {
-  body {
-    @include grid($align: center, $justify: center);
-    height: 100svh;
-    background-color: $primary-color;
-  }
-
-  .calculator {
-    width: 600px;
-    height: 960px;
+    margin: 0 auto;
     border-radius: 16px;
     box-shadow: 0 2px 8px -2px darken($bg-color, 35%);
 
@@ -27,12 +10,7 @@
       border-radius: 16px;
     }
 
-    .history-icon {
-      width: 64px;
-      height: 64px;
-      border-radius: 32px
-    }
-
     @include adjustCalcFontSize;
   }
 }
+
